@@ -8,7 +8,8 @@ class User extends Model {
         name: Sequelize.STRING,
         password: Sequelize.VIRTUAL,
         password_hash: Sequelize.STRING,
-        // termminar depois que tivermos quem será o usuário
+        years_old: Sequelize.DATEONLY,
+        email: Sequelize.STRING,
       },
       {
         sequelize,

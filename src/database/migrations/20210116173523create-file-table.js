@@ -1,6 +1,7 @@
 module.exports = {
+  // criando a coluna com ON UPDATE: CASCADE e ALLOW NULL: TRUE
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('users', {
+    await queryInterface.createTable('files', {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -11,23 +12,23 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      years_old: {
-        type: Sequelize.DATEONLY,
-        allowNull: false,
-      },
-      password_hash: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      email: {
+      path: {
         type: Sequelize.STRING,
         allowNull: false,
         unique: true,
+      },
+      created_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      updated_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
       },
     });
   },
 
   down: async (queryInterface) => {
-    await queryInterface.dropTable('users');
+    await queryInterface.dropTable('files');
   },
 };
