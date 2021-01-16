@@ -1,3 +1,4 @@
+// adicionando coluna de foreign key no user para file
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.addColumn('users', 'avatar_id', {
