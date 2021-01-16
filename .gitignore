@@ -1,0 +1,5 @@
+.vscode
+node_modules
+.editorconfig
+.prettierrc
+/tmp/uploads/*
