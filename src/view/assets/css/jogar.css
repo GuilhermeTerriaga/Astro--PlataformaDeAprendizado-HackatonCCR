@@ -1,0 +1,61 @@
+.navbar-nav {
+    font-size: 18px;
+}
+.navbar-nav.ml-auto {
+    background-color: #95C4FC;
+    border-radius: 12px;
+    padding: 3px 0px 3px 7px;
+    border: 1px solid;
+    margin-right: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+.navbar-nav {
+    font-size: 15px;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+li.nav-item {
+    padding-right: 15px;
+}
+.class-ComoJogar {
+    height: 130vh;
+    min-height: 500px;
+    background-image: url(../img/bg-comojogar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container.cont-header {
+    height: 150vh;
+}
+h3.font-weight-light.titulo {
+    color: white;
+    font-weight: 600 !important;
+}
+.texto-header-astro {
+    display: flex;
+}
+h3.font-weight-light.titulo {
+    color: white;
+    font-weight: 600 !important;
+}
+
+@media(max-width:450px){
+    .class-ComoJogar{
+        background-color: #1D0E3D !important;
+        background-image: none;
+    }
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    h3.font-weight-light.titulo {
+        font-weight: 600 ;
+        position: relative ;
+        bottom: 170px ;
+        text-align: justify;
+    }
+}
