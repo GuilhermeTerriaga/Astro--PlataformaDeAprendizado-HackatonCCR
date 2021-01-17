@@ -7,10 +7,25 @@ footer{
 }
 .navbar-nav.ml-auto {
     background-color: #95C4FC;
-    border-radius: 20px;
-    padding: 10px 6px;
+    border-radius: 12px;
+    padding: 3px 0px 3px 7px;
+    border: 1px solid;
+    margin-right: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+.navbar-nav {
+    font-size: 15px;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white !important;
 }
 
+li.nav-item {
+    padding-right: 15px;
+}
 .masthead {
     height: 130vh;
     min-height: 500px;
@@ -73,4 +88,14 @@ p.texto-info{
     margin-top: 48px;
     border-radius: 60px;
     padding: 0px 15px;
+}
+ul.footer-icon {
+    list-style-type: none;
+    display: flex;
+}
+li.icon {
+    padding: 20px 30px 0px 24px;
+}
+li.icon:hover {
+    color: white;
 }
