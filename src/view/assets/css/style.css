@@ -99,3 +99,53 @@ li.icon {
 li.icon:hover {
     color: white;
 }
+
+@media(max-width:800px){
+    .masthead{
+        background-position: right;
+    }
+    .texto-header-astro {
+        max-width: 50%;
+    }
+    .texto-explicativo {
+        max-width: 100%;
+    }
+    .info-footer{
+        line-height: 25px;
+    }
+    .navbar-light .navbar-toggler{
+        border:none;
+    }
+    
+}
+
+@media (max-width:450px){
+    .texto-header-astro {
+        max-width: 100%;
+        margin-top: 105px;
+    }
+    .text-img {
+        display: block;
+    }
+    p.texto-info {
+        bottom: 0px;
+    }
+    .img-astro {
+        bottom: 0px;
+    }
+    .masthead{
+        background-color: #1D0E3D;
+    }
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
+
+@media (max-width:320px){
+    .col-sm-12.col-md-3.img-header.text-center img {
+        width: 100%;
+    }
+    .img-astro {
+        margin-left: 50px;
+    }
+}
