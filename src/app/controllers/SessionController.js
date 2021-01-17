@@ -24,13 +24,14 @@ class SessionController {
     if (!(await user.checkPassword(password))) {
       return res.status(401).json({ error: 'Senhas não batem' });
     }
-    const { id, name } = user;
+    const { id, name, point } = user;
 
     return res.json({
       user: {
         id,
         name,
         email,
+        point,
       },
       token: jwt.sign({ id }, authConfig.secret, {
         expiresIn: authConfig.expiresIn,

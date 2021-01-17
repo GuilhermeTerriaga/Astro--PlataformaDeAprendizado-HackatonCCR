@@ -10,6 +10,7 @@ class User extends Model {
         password_hash: Sequelize.STRING,
         years_old: Sequelize.DATEONLY,
         email: Sequelize.STRING,
+        point: Sequelize.INTEGER,
       },
       {
         sequelize,

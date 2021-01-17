@@ -83,7 +83,7 @@ class UserController {
 
   async index(req, res) {
     const userIndex = await User.findAll({
-      attributes: ['id', 'name', 'email', 'years_old', 'avatar_id'],
+      attributes: ['id', 'name', 'email', 'years_old', 'point', 'avatar_id'],
       include: [
         {
           model: File,
@@ -107,7 +107,7 @@ class UserController {
     const { email } = req.body;
     const userOne = await User.findAll({
       where: { email },
-      attributes: ['id', 'name', 'email', 'years_old', 'avatar_id'],
+      attributes: ['id', 'name', 'email', 'years_old', 'point', 'avatar_id'],
       include: [
         {
           model: File,
