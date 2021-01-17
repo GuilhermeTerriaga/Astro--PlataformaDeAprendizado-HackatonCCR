@@ -1,0 +1,76 @@
+/*NAVBAR*/
+footer{
+    background-color: #95C4FC;
+}
+.navbar-nav {
+    font-size: 18px;
+}
+.navbar-nav.ml-auto {
+    background-color: #95C4FC;
+    border-radius: 20px;
+    padding: 10px 6px;
+}
+
+.masthead {
+    height: 130vh;
+    min-height: 500px;
+    background-image: url(../img/bg-certo.svg);
+
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.text-img {
+    display: -webkit-inline-box;
+
+}
+.img-astro {
+    margin-left: 100px;
+    width: 200px;
+    bottom: 154px;
+    position: relative;
+}
+h2.font-weight-light {
+    font-weight: 800 !important;
+    color:#114664;
+    font-size: 40px;
+}
+p.texto-info{
+    position: relative;
+    bottom:120px;
+    color: #14052A;
+    text-align: justify;
+    font-size: 16px;
+}
+.container.cont-header {
+    height: 100%;
+}
+
+.font-weight-light.titulo{
+    color: white;
+    font-weight: 600 !important;
+    font-size:48px;
+}
+.lead{
+    color: white;
+    font-size: 40px;
+}
+.info-footer {
+    margin-bottom: 0px;
+    line-height: 18px;
+    color: #000000;
+    font-size: 18px;
+}
+.page-footer.blue.text-center.text-md-left.mt-0 {
+    padding-top: 55px;
+}
+.footer-copyright{
+    color:#000000
+}
+.btn.btn-jogar {
+    background-color: white;
+    color: #16072E;
+    font-size: 32px;
+    margin-top: 48px;
+    border-radius: 60px;
+    padding: 0px 15px;
+}
