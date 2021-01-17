@@ -6,7 +6,7 @@ class UserController {
   async store(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string().required(),
-      yearsOld: Yup.date().required(),
+      years_old: Yup.date().required(),
       email: Yup.string().email().required(),
       password: Yup.string().required().min(8),
     });
@@ -23,12 +23,13 @@ class UserController {
     if (userExists) {
       return res.status(400).json({ error: 'Usuário já existe' });
     }
-    const { id, name, yearsOld, email } = await User.create(req.body);
+    // eslint-disable-next-line camelcase
+    const { id, name, years_old, email } = await User.create(req.body);
 
     return res.json({
       id,
       name,
-      yearsOld,
+      years_old,
       email,
     });
   }
@@ -36,7 +37,7 @@ class UserController {
   async update(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string().required(),
-      yearsOld: Yup.date().required(),
+      years_old: Yup.date().required(),
       email: Yup.string().email().required(),
       oldPassword: Yup.string().required().min(8),
       password: Yup.string()
@@ -70,11 +71,12 @@ class UserController {
       return res.status(401).json({ error: 'Senhas não batem' });
     }
 
-    const { id, name, yearsOld } = await user.update(req.body);
+    // eslint-disable-next-line camelcase
+    const { id, name, years_old } = await user.update(req.body);
     return res.json({
       id,
       name,
-      yearsOld,
+      years_old,
       email,
     });
   }
@@ -103,7 +105,7 @@ class UserController {
         .json({ error: 'Erro de validação dos dados enviados' });
     }
     const { email } = req.body;
-    const userOne = await User.findOne({
+    const { userOne } = await User.findOne({
       where: { email },
     });
     if (!userOne) {
