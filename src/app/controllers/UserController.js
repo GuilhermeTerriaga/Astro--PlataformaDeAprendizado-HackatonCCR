@@ -105,7 +105,7 @@ class UserController {
         .json({ error: 'Erro de validação dos dados enviados' });
     }
     const { email } = req.body;
-    const userOne = await User.findAll({
+    const userOne = await User.findOne({
       where: { email },
       attributes: ['id', 'name', 'email', 'years_old', 'point', 'avatar_id'],
       include: [
@@ -120,6 +120,28 @@ class UserController {
       return res.status(400).json({ error: 'Usuário não encontrado' });
     }
     return res.json(userOne);
+  }
+
+  async point(req, res) {
+    const schema = Yup.object().shape({
+      email: Yup.string().email().required(),
+    });
+
+    if (!(await schema.isValid(req.body))) {
+      return res
+        .status(400)
+        .json({ error: 'Erro de validação dos dados enviados' });
+    }
+    const { email } = req.body;
+    const userQuest = await User.findOne({
+      where: { email },
+    });
+    if (userQuest.length < 1) {
+      return res.status(400).json({ error: 'Usuário não encontrado' });
+    }
+    userQuest.point = userQuest.score();
+    await userQuest.save();
+    return res.json(userQuest);
   }
 }
 

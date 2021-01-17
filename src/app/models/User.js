@@ -35,6 +35,10 @@ class User extends Model {
   checkPassword(password) {
     return bcrypt.compare(password, this.password_hash);
   }
-}
 
+  score() {
+    const pointUser = this.point + 10;
+    return pointUser;
+  }
+}
 export default User;

@@ -6,13 +6,20 @@ class Question extends Model {
       {
         tittle: Sequelize.TEXT('long'),
         solution: Sequelize.INTEGER,
-        options: Sequelize.JSON,
+        options: Sequelize.TEXT('long'),
       },
       {
         sequelize,
       }
     );
+    return this;
+  }
+
+  checkOption(option) {
+    if (option === this.solution) {
+      return this;
+    }
+    return null;
   }
 }
-
 export default Question;

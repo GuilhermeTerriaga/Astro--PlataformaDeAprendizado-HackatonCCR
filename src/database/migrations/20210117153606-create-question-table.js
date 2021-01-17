@@ -16,7 +16,14 @@ module.exports = {
         allowNull: false,
       },
       options: {
-        type: Sequelize.JSON,
+        type: Sequelize.TEXT('long'),
+      },
+      created_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      updated_at: {
+        type: Sequelize.DATE,
         allowNull: false,
       },
     });
