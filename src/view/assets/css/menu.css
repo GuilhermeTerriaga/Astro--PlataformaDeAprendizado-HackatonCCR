@@ -6,3 +6,13 @@ p.esqueceu-senha, p.esqueceu-senha a {
     color: grey;
     margin-top: 10px;
 }
+button#btnSend {
+    background-color: #1D0E3D;
+    color: white;
+    padding: 4px 25px;
+}
+button#btnSend:hover{
+    background-color: #ffffff;
+    color: #1D0E3D;
+    border:1px solid #1D0E3D;
+}
