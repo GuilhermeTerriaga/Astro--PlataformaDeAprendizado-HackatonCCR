@@ -105,10 +105,18 @@ class UserController {
         .json({ error: 'Erro de validação dos dados enviados' });
     }
     const { email } = req.body;
-    const { userOne } = await User.findOne({
+    const userOne = await User.findAll({
       where: { email },
+      attributes: ['id', 'name', 'email', 'years_old', 'avatar_id'],
+      include: [
+        {
+          model: File,
+          as: 'foto',
+          attributes: ['path', 'name', 'url'],
+        },
+      ],
     });
-    if (!userOne) {
+    if (userOne.length < 1) {
       return res.status(400).json({ error: 'Usuário não encontrado' });
     }
     return res.json(userOne);
