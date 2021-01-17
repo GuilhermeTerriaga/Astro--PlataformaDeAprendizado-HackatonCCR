@@ -13,8 +13,11 @@
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="img-fluid img-logo-header" src="assets/img/logo.svg"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <picture class="navbar-brand">
+                    <source media="(max-width:770px)" srcset="assets/img/logo-footer.svg">
+                    <img class="img-fluid img-logo-header" src="assets/img/logo.svg">
+                </picture>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -39,14 +42,14 @@
         <header class="masthead">
             <div class="container cont-header">
                 <div class="row h-100 align-items-center">
-                    <div class="col-sm-12 col-md-8">
+                    <div class="col-sm-12 col-md-8 texto-header-astro">
                         <h1 class="font-weight-light titulo">Trilhe seu caminho</h1>
                         <p class="lead">seja um Astro</p>
                         <button class="btn btn-jogar">
                             <span class="span-jogar">Jogue agora</span>
                         </button>
                     </div>
-                    <div class="col-sm-12 col-md-3 text-center">
+                    <div class="col-sm-12 col-md-3 img-header text-center">
                         <img src="assets/img/astro.svg" alt="astro logo">
                     </div>
                 </div>
@@ -59,7 +62,7 @@
                     <h2 class="font-weight-light">O que é Astro? </h2>
                     <img class="img-fluid img-astro" src="assets/img/astronote.svg" alt="Astro no notebook">
                 </div>
-                <div class="col-sm-12 col-md-8">
+                <div class="col-sm-12 col-md-8 texto-explicativo">
                     <p class="texto-info">É uma plataforma gameficada para desenvolver habilidades que serão essenciais no futuro pessoal e profissional do indivíduo. Temos como objetivo desenvolver competências financeiras, sociais e educacionais. Astro é aquele sonho de infância de chegar às estrelas. Por que não realiza-lo?</p>
                 </div>
             </div>
