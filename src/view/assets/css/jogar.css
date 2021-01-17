@@ -64,7 +64,7 @@ input{
 }
 
 input:checked + label{
-    color: red;
+    color: #02DAFF;
 }
 @media(max-width:450px){
     .class-ComoJogar{
