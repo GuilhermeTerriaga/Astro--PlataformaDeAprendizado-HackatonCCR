@@ -8,14 +8,14 @@
         <title>Astro!</title>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <link rel="stylesheet" href="assets/css/style.css">
-        
+        <link rel="stylesheet" href="assets/css/menu.css">
     </head>
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top menu">
             <div class="container-fluid">
                 <picture class="navbar-brand">
-                    <source media="(max-width:770px)" srcset="assets/img/logo-footer.svg">
+                    <source media="(max-width:770px)" srcset="assets/img/logo.svg">
                     <img class="img-fluid img-logo-header" src="assets/img/logo.svg">
                 </picture>
                 <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
                             <a class="nav-link" href="index.html">INÍCIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">COMO JOGAR</a>
+                            <a class="nav-link" href="comojogar.html">COMO JOGAR</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FALE CONOSCO</a>
+                            <a class="nav-link" href="contato.html">FALE CONOSCO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">LOGIN</a>
@@ -40,35 +40,50 @@
             </div>
         </nav>
 
-        <header class="masthead">
+        <form class="form-astro" action="">
             <div class="container cont-header">
                 <div class="row h-100 align-items-center">
-                    <div class="col-sm-12 col-md-8 texto-header-astro">
-                        <h1 class="font-weight-light titulo">Trilhe seu caminho</h1>
-                        <p class="lead">seja um Astro</p>
-                        <button class="btn btn-jogar">
-                            <span class="span-jogar">Jogue agora</span>
-                        </button>
-                    </div>
-                    <div class="col-sm-12 col-md-3 img-header text-center">
-                        <img src="assets/img/astro.svg" alt="astro logo">
-                    </div>
-                </div>
-            </div>
-        </header>
 
-        <section class="py-5">
-            <div class="container">
-                <div class="text-img">
-                    <h2 class="font-weight-light">O que é Astro? </h2>
-                    <img class="img-fluid img-astro" src="assets/img/astronote.svg" alt="Astro no notebook">
-                </div>
-                <div class="col-sm-12 col-md-8 texto-explicativo">
-                    <p class="texto-info">É uma plataforma gameficada para desenvolver habilidades que serão essenciais no futuro pessoal e profissional do indivíduo. Temos como objetivo desenvolver competências financeiras, sociais e educacionais. Astro é aquele sonho de infância de chegar às estrelas. Por que não realiza-lo?</p>
+                    <div class="col-sm-12 col-md-6 texto-header-astro login">
+                        <div class="titulo-form">
+                            <h2 class="titulo-form-login">Login</h2>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu Email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+                        </div>
+
+                        <div class="btn-login-info">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <p class="esqueceu-senha">Esqueceu sua senha? <a class="esqueceu-senha" href="#">Clique aqui</a></p>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 texto-header-astro cadastro">
+                        <div class="titulo-form">
+                            <h2 class="titulo-form-login">Registro</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+
                 </div>
             </div>
-        </section>
-        <section>
+        </form>
+        <section id="footer">
             <footer class="page-footer blue text-center text-md-left mt-0">
 
                 <!--Footer Links-->

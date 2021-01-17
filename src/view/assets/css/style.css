@@ -100,6 +100,23 @@ li.icon:hover {
     color: white;
 }
 
+.form-astro{
+    height: 100vh;
+    min-height: 500px;
+}
+.form-control {
+    width: 50%;
+}
+button.btn.btn-primary {
+    background-color: #000000;
+    border: none;
+    border-radius: 40px;
+    padding: 4px 15px;
+}
+.col-sm-12.col-md-6.texto-header-astro.login {
+    margin-top: 50px;
+}
+
 @media(max-width:800px){
     .masthead{
         background-position: right;
@@ -116,6 +133,10 @@ li.icon:hover {
     .navbar-light .navbar-toggler{
         border:none;
     }
+    .form-control {
+        width: 100% !important;
+    }
+    
     
 }
 
@@ -139,6 +160,16 @@ li.icon:hover {
     .custom-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
+    .cadastro{
+        margin-top: 50px;
+    }
+    section#footer {
+        margin-top: 10%;
+    }
+    .col-sm-12.col-md-6.texto-header-astro.login {
+        margin-top: 175px !important;
+    }
+    
 }
 
 @media (max-width:320px){
