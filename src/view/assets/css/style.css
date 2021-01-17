@@ -30,7 +30,6 @@ li.nav-item {
     height: 130vh;
     min-height: 500px;
     background-image: url(../img/bg-certo.svg);
-
     background-position: left;
     background-repeat: no-repeat;
 }
