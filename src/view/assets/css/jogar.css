@@ -43,7 +43,29 @@ h3.font-weight-light.titulo {
     color: white;
     font-weight: 600 !important;
 }
+.card {
+    border-radius: 5em;
+    margin-bottom: 10px;
+    background-color: #E791FE;
+}
+ul.ulPerguntas {
+    list-style-type: none;
+    margin-top: 50px;
+}
+li.respostas-perguntas {
+    background-color: white;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 25px;
+}
+input{
+    display:none;
+}
 
+input:checked + label{
+    color: red;
+}
 @media(max-width:450px){
     .class-ComoJogar{
         background-color: #1D0E3D !important;
@@ -58,4 +80,9 @@ h3.font-weight-light.titulo {
         bottom: 170px ;
         text-align: justify;
     }
+    .card-perguntas {
+        margin-top: 25px;
+    }
+    
+    
 }
