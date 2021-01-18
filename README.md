@@ -1,7 +1,6 @@
 <div align="center">
 <img src= "https://raw.githubusercontent.com/GuilhermeTerriaga/time-90-HackatonCCR/main/ReadmeImages/Caminho%201801.svg">
 </div>
-
 <h1 align="center">Astro!</h1>
 
 Solução criada por Guilherme Terriaga, Tuana Barbosa, Gustavo Oliveira, Pedro Izidio e Tamara Prussak. Criamos uma plataforma gameficada para desenvolver habilidades que serão essenciais no futuro pessoal e profissional do indivíduo. Temos como objetivo desenvolver competências educacionais, financeiras e sociais . Astro é aquele sonho de infância de chegar às estrelas!!!
