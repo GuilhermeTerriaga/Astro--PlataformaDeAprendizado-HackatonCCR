@@ -14,6 +14,5 @@ Acesse a pasta do projeto pelo seu terminal de preferência e rode os seguintes 
 * para criar os bancos de dados: ```yarn sequelize db:migrate```
 * para que o servidor inicie: ```yarn dev```
 
-![Alt text](https://raw.githubusercontent.com/GuilhermeTerriaga/time-90-HackatonCCR/main/ReadmeImages/Web%201920%20%E2%80%93%202/Componente%204%20%E2%80%93%201.svg)
 <img src= "https://raw.githubusercontent.com/GuilhermeTerriaga/time-90-HackatonCCR/main/ReadmeImages/Web%201920%20%E2%80%93%202/Componente%204%20%E2%80%93%201.svg">
 
